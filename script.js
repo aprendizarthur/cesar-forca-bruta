@@ -15,7 +15,7 @@ function forcaBruta(mensagem, alfabeto){
             for(var i = 0; i < alfabeto.length; i++){
                 if(mensagem[j] == alfabeto[i]){
                     //adiciona cada letra criptografada para a string criptografado reescrevendo assim a mensagem com o deslocamento selecionado, indice por indice
-                    resultados[fator] += alfabeto[(i + fator) % alfabeto.length] 
+                    resultados[fator] += alfabeto[(i - fator + alfabeto.length) % alfabeto.length] 
                 }
             }
         }  
